@@ -26,7 +26,3 @@ Thumbs.db
 
 # Test files
 *.spec.ts
-
-# Configuration files
-tsconfig.json
-tslint.json
