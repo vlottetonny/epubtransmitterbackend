@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from "express";
 import epubRoutes from "./routes/epub.routes";
 import codeRoutes from "./routes/code.routes";
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 const app: Express = express();
 
 app.use(express.json());
