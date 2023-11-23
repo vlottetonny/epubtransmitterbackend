@@ -12,13 +12,13 @@ export const getCode = async (req: Request, res: Response) => {
 }
 
 export const connectCode = async (req: Request, res: Response) => {
-    console.log(req.body.code);
     try {
         const code = String(req.body.code);
-        console.log("code: " + code)
         const connectResponse = await codeService.connectCode(code);
         if (connectResponse) {
             res.status(200).send(connectResponse);
+        } else if (connectResponse === false) {
+            res.status(400).send("The code is invalid or already in use.");
         } else {
             res.status(500).send("The connection could not be made, please check your code and try again.");
         }

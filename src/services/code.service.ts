@@ -16,8 +16,10 @@ export async function getCode() {
 
 export async function connectCode(code: string): Promise<string | boolean> {
     const exists = await codeRepository.codeExists(code);
+    const inUse = await codeRepository.codeInUse(code);
 
-    if (exists) {
+    if (exists && !inUse) {
+        await codeRepository.updateCode(code, true);
         return "Connected!";
     } else {
         return false;
