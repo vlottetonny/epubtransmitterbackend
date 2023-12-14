@@ -28,23 +28,23 @@ Zorg ervoor dat je deze commando's uitvoert in de hoofdmap van het project, waar
 
 ## Dit zijn de endpoints van de backend die je kunt aanroepen:
 
->1. **Endpoint**: `GET /code/get`
-    - **Beschrijving**: Haalt een code op.
-    - **Parameters**: Geen
-    - **Verzoek Body**: Geen
-    - **Reactie**: Een tekenreeks die de code voorstelt.
+>1. **Endpoint**: `GET /code/get` <br/>
+    - **Beschrijving**: Haalt een code op. <br/>
+    - **Parameters**: Geen <br/>
+    - **Verzoek Body**: Geen <br/>
+    - **Reactie**: Een tekenreeks die de code voorstelt. <br/>
 
-> 2. **Endpoint**: `POST /code/connect`
-    - **Beschrijving**: Verbindt een code.
-    - **Parameters**: Geen
-    - **Verzoek Body**: Een JSON-object met een enkele eigenschap `code` die een tekenreeks is.
-    - **Voorbeeld Verzoek Body**: `{ "code": "A123BC" }`
-    - **Reactie**: Een bericht dat het resultaat van de verbinding aangeeft.
+> 2. **Endpoint**: `POST /code/connect` <br/>
+    - **Beschrijving**: Verbindt een code. <br/>
+    - **Parameters**: Geen <br/>
+    - **Verzoek Body**: Een JSON-object met een enkele eigenschap `code` die een tekenreeks is. <br/>
+    - **Voorbeeld Verzoek Body**: `{ "code": "A123BC" }` <br/>
+    - **Reactie**: Een bericht dat het resultaat van de verbinding aangeeft. <br/>
 
->3. **Endpoint**: `POST /epub/send`
-    - **Beschrijving**: Verstuurt een epub-bestand en een code.
-    - **Parameters**: Geen
-    - **Verzoek Body**: Formulier-gegevens die een `code` veld bevatten dat een tekenreeks is en een `file` veld dat het epub-bestand is.
-    - **Voorbeeld Verzoek Body**: `{ "code": "AB12C3", "file": <bestand> }`
-    - **Reactie**: Een JSON-object met een bericht dat het resultaat van de bestandsverwerking aangeeft.
+>3. **Endpoint**: `POST /epub/send` <br/>
+    - **Beschrijving**: Verstuurt een epub-bestand en een code. <br/>
+    - **Parameters**: Geen <br/>
+    - **Verzoek Body**: Formulier-gegevens die een `code` veld bevatten dat een tekenreeks is en een `file` veld dat het epub-bestand is. <br/>
+    - **Voorbeeld Verzoek Body**: `{ "code": "AB12C3", "file": <bestand> }` <br/>
+    - **Reactie**: Een JSON-object met een bericht dat het resultaat van de bestandsverwerking aangeeft. <br/>
 
