@@ -24,9 +24,24 @@ Hier is een korte handleiding over hoe je het project kunt starten en bouwen:
    npm run serve
    ```
 
-Zorg ervoor dat je deze commando's uitvoert in de hoofdmap van het project, waar jhet`package.json` bestand zich bevindt.
+Zorg ervoor dat je deze commando's uitvoert in de hoofdmap van het project, waar het`package.json` bestand zich bevindt.
 
-## Dit zijn de endpoints van de backend die je kunt aanroepen:
+## MongoDB Credentials
+
+Om dit project te gebruiken, moet je MongoDB credentials instellen. Deze credentials worden gebruikt om verbinding te maken met de MongoDB database. Volg de onderstaande stappen om je MongoDB credentials in te stellen:
+
+1. Maak een nieuw bestand aan in de hoofdmap van het project en noem het `.env`.
+
+2. Open het `.env` bestand en voeg de volgende regels toe:
+
+   ```dotenv
+   MONGO_USER=<jouw MongoDB gebruikersnaam>
+   MONGO_PASSWORD=<jouw MongoDB wachtwoord>
+   MONGO_HOST=<jouw MongoDB host>
+   
+## Endpoints
+
+Dit zijn de endpoints van de backend die je kunt aanroepen:
 
 >1. **Endpoint**: `GET /code/get` <br/>
     - **Beschrijving**: Haalt een code op. <br/>
